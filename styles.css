@@ -100,6 +100,67 @@ header h1 {
     color: #555;
 }
 
+.downloads {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+}
+
+.downloads h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.download-sub {
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.download-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, border-color 0.2s, background 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.download-card:hover {
+    transform: translateY(-4px);
+    border-color: #54d6c4;
+    background: rgba(84, 214, 196, 0.1);
+}
+
+.download-icon {
+    font-size: 2.5rem;
+}
+
+.download-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.download-size {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
 footer {
     background: #1a1a2e;
     color: #fff;
